@@ -1,5 +1,14 @@
 n = int(input())
-x = [i for i in range(1,n+1,2)]
-y = [i for i in range(0,n+1,2)]
-t = sum(y)-sum(x)
-print(t)
+if n%2==0:
+    x = n//2 
+    temp = x*(x+1) 
+    temp2 = (n-x)**2
+    print(temp-temp2)
+else:
+    x = n//2 + 1
+    temp = x*(x+1) 
+    temp2 = x**2
+    print(temp2-temp)
+
+
+ 
