@@ -1,6 +1,7 @@
 for i in range(int(input())):
     n = int(input())
     arr = list(map(int, input().split()))
+    arr == arr.sort(reverse=True)
     old_arr = arr[:]
 
     flag = True
