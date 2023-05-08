@@ -31,6 +31,10 @@ for i in range(int(input())):
         flag3 = False
     # find the minimum time
 
+    time_01 = 100000000
+    time_10 = 100000000
+    time_11 = 100000000
+
     if flag1:
         min_ind = skill_11[0]
         for i in range(len(skill_11)):
@@ -52,15 +56,9 @@ for i in range(int(input())):
                 min_ind = skill_01[i]
         time_01 = times[min_ind]
     
-    if flag1 == False and (flag2==False or flag3==False):
+    t = min(time_11,time_10+time_01)
+    if t<100000000:
+        print(min(time_11,time_10+time_01))
+    else:
         print("-1")
-    elif flag1 == True and (flag2==False and flag3==False):
-        print(time_11)
-    elif flag1 == True and flag2 == True and flag3 == True:
-        if time_11 < (time_10+time_01):
-            print(time_11)
-        else:
-            print(time_10+time_01)
-    elif flag1 == False and flag2 == True and flag3 == True:
-        print(time_01+time_10)
         
