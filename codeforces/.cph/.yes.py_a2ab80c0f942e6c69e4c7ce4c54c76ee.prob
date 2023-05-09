@@ -1,0 +1,1 @@
+{"name":"Local: yes","url":"/home/mehrab/Documents/cp-gym/codeforces/yes.py","tests":[{"id":1683640765143,"input":"10\nYES\nyES\nyes\nYes\nYeS\nNoo\norZ\nyEz\nYas\nXES","output":"YES\nYES\nYES\nYES\nYES\nNO\nNO\nNO\nNO\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mehrab/Documents/cp-gym/codeforces/yes.py","group":"local","local":true}
