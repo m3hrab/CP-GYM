@@ -22,10 +22,10 @@ for i in range(int(input())):
     negative = 0
     for i in c:
         if len(i)!=0 and len(i)!=4:
-        if sum(i)>0:
-            positive +=1
-        else:
-            negative +=1
+            if sum(i)>0:
+                positive +=1
+            else:
+                negative +=1
     
     print(abs(positive-negative))
 
