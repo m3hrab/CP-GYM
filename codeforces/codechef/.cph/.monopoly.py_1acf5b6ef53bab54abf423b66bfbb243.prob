@@ -1,0 +1,1 @@
+{"name":"Local: monopoly","url":"/home/mehrab/Documents/cp-gym/codeforces/codechef/monopoly.py","tests":[{"id":1683730041013,"input":"4\n1 1 1 10\n30 20 6 4\n100 90 3 4\n14 15 16 17","output":"YES\nNO\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mehrab/Documents/cp-gym/codeforces/codechef/monopoly.py","group":"local","local":true}
