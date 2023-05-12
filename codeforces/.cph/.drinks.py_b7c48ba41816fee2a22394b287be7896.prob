@@ -1,0 +1,1 @@
+{"name":"Local: drinks","url":"/home/mehrab/Documents/cp-gym/codeforces/drinks.py","tests":[{"id":1683911206261,"input":"4\n0 25 50 75\n","output":"37.500000000000"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mehrab/Documents/cp-gym/codeforces/drinks.py","group":"local","local":true}
