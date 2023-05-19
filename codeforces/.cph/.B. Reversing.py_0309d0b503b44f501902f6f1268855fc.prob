@@ -1,0 +1,1 @@
+{"name":"Local: B","url":"/home/mehrab/Documents/cp-gym/codeforces/B. Reversing.py","tests":[{"id":1684258415839,"input":"7\n1 2 0 4 0 5 6\n","output":"4 0 1 2 0 5 6 "}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mehrab/Documents/cp-gym/codeforces/B. Reversing.py","group":"local","local":true}
