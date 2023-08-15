@@ -1,0 +1,1 @@
+{"name":"Local: reverse_root","url":"/home/mehrab/Documents/cp-gym/timus/reverse_root.py","tests":[{"id":1692094728654,"input":" 1427  0   \n\n   876652098643267843 \n5276538","output":"2297.0716\n936297014.1164\n0.0000\n37.7757"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mehrab/Documents/cp-gym/timus/reverse_root.py","group":"local","local":true}
