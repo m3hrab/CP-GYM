@@ -17,18 +17,6 @@ def read_int():
 def read_int_list():
     return list(map(int, input().split()))
 
-def read_int_list_minus_one():
-    return list(map(lambda x: int(x) - 1, input().split()))
-
-# Fast output writing
-def print_str(s):
-    sys.stdout.write(s + '\n')
-    sys.stdout.flush()
-
-def print_int(n):
-    sys.stdout.write(str(n) + '\n')
-    sys.stdout.flush()
-
 def print_int_list(arr):
     sys.stdout.write(' '.join(map(str, arr)) + '\n')
     sys.stdout.flush()
@@ -38,8 +26,11 @@ def main():
     # Input reading
     n = read_int()
     arr = read_int_list()
+    result = []
+    for i in range(1,n+1):
+        result.append(arr.index(i)+1)
 
-    # Your code here
+    print_int_list(result)
 
 if __name__ == "__main__":
     main()
