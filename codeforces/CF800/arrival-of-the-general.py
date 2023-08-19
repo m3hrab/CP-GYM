@@ -1,21 +1,24 @@
 n = int(input())
 a = list(map(int, input().split()))
-first = max(a) 
-last = min(a)
+max_n = a[0]
+min_n = a[0]
+max_ind = 0
+min_ind = 0
+for i in range(n):
+    if a[i] <= min_n:
+        min_n = a[i]
+        min_ind = i 
 
-c = (a.index(first)-0)
-if a.count(last)>1: 
-    d = 0
-    for i in range(n-1, -1,-1):
-        if a[i] == last:
-            break
-        d += 1
+    if a[i] > max_n:
+        max_n = a[i] 
+        max_ind = i
+
+n = n - 1
+if max_ind < min_ind:
+    ans = max_ind + (n - min_ind)
 
 else:
-    i
-    d = n - 1 - a.index(last)
+    ans = max_ind + (n-min_ind) - 1
 
-if a.index(first) > a.index(last):
-    print(c+d-1)
-else:
-    print(c+d)    
+print(ans)
+
