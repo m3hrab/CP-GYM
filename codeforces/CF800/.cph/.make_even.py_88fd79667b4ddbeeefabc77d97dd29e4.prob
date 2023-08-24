@@ -1,0 +1,1 @@
+{"name":"Local: make_even","url":"/home/mehrab/Documents/cp-gym/codeforces/CF800/make_even.py","tests":[{"id":1692784918014,"input":"4\n3876\n387\n4489\n0\n","output":"0\n2\n1\n0\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mehrab/Documents/cp-gym/codeforces/CF800/make_even.py","group":"local","local":true}
