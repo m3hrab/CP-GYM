@@ -1,0 +1,1 @@
+{"name":"Local: police_recurits","url":"/home/mehrab/Documents/cp-gym/codeforces/CF800/police_recurits.py","tests":[{"id":1693245379542,"input":"11\n-1 -1 2 -1 -1 -1 -1 -1 -1 -1 -1","output":"8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mehrab/Documents/cp-gym/codeforces/CF800/police_recurits.py","group":"local","local":true}
