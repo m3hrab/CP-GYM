@@ -66,10 +66,8 @@ def factorize(n):
         factors.append(n)
     return factors
 
-# Main function
-def main():
-    # Read input 
+def solve():
     pass
 
 if __name__ == '__main__':
-    main()
+    solve()
