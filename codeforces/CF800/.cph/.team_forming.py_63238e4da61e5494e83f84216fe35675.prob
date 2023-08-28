@@ -1,0 +1,1 @@
+{"name":"Local: team_forming","url":"/home/mehrab/Documents/cp-gym/codeforces/CF800/team_forming.py","tests":[{"id":1693250359594,"input":"2\n1 100\n","output":"99"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mehrab/Documents/cp-gym/codeforces/CF800/team_forming.py","group":"local","local":true}
