@@ -1,0 +1,1 @@
+{"name":"Local: games","url":"/home/mehrab/Documents/cp-gym/codeforces/CF800/games.py","tests":[{"id":1693274380695,"input":"2\n1 2\n1 2","output":"0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mehrab/Documents/cp-gym/codeforces/CF800/games.py","group":"local","local":true}
