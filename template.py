@@ -20,15 +20,15 @@ def print_array(arr, sep=' '):
 def solve():
     n = read_int()
     reads_count = read_ints()
-    day = 0
+    day = 1
     total_finish = 0
-    if sum(reads_count)*2 <= n:
-        n = n - sum(reads_count)
-
-    while total_finish < n:
-        total_finish += reads_count[day]
+        
+    while True:
+        total_finish += reads_count[day-1]
+        if total_finish >= n:
+            break
         day += 1
-        if day > 6:
+        if day > 7:
             day = 1
     
     print(day)
