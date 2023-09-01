@@ -1,0 +1,1 @@
+{"name":"Local: football","url":"/home/mehrab/Documents/cp-gym/codeforces/CF1000/football.py","tests":[{"id":1693513625710,"input":"5\nA\nABA\nABA\nA\nA","output":"A"},{"id":1693513971611,"input":"1\nABC\n","output":"ABC"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mehrab/Documents/cp-gym/codeforces/CF1000/football.py","group":"local","local":true}
