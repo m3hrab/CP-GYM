@@ -18,20 +18,7 @@ def print_array(arr, sep=' '):
 
 
 def solve():
-    n = read_int()
-    reads_count = read_ints()
-    day = 1
-    total_finish = 0
-        
-    while True:
-        total_finish += reads_count[day-1]
-        if total_finish >= n:
-            break
-        day += 1
-        if day > 7:
-            day = 1
-    
-    print(day)
+    pass
 
 if __name__ == '__main__':
     solve()
