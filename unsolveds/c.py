@@ -1,6 +1,6 @@
 import sys
 import math
-from itertools import combinations_with_replacement
+from itertools import combinations
 INF = float('inf')
 
 # input functions
@@ -22,7 +22,7 @@ def solve():
     for i in range(int(input())):
         n = read_ints()
         s = sum(n)
-        pairs = combinations_with_replacement(list(_ for _ in range(1,s+1)),2)
+        pairs = combinations(list(_ for _ in range(1,s+1)),2)
         flag = False
         for pair in list(pairs):
             a = pair[0]
