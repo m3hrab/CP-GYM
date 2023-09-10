@@ -25,18 +25,7 @@ def print_array(arr, sep=' '):
 
 # Main Function
 def solve():
-    n = read_int()
-    a = read_ints()
-    a.sort()
-    count = 0
-    temp = 0
-    while True:
-        temp += a.pop()
-        count += 1
-        if sum(a) < temp or len(a)==0:
-            break 
-    
-    print(count)
+    pass
 
 if __name__ == '__main__':
     solve()
