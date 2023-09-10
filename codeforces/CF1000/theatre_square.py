@@ -27,12 +27,18 @@ def print_array(arr, sep=' '):
 def solve():
     n, m, k = read_n_int()
 
-    # horizontal axis
-    count = n//k
-    count += m//k
+    # vartical axis
+    if m%k==0:
+        count = m//k
+    else:
+        count = m//k + 1 
 
-    if count == 0:
-        count += 1
-    print(count)
+
+    if n%k==0:
+        count2 = n//k 
+    else:
+        count2 = n//k + 1
+
+    print(count*count2)
 if __name__ == '__main__':
     solve()
