@@ -1,38 +1,51 @@
 import sys
 
+# Constants
 INF = float('inf')
+MOD = 1000000007
 
-# input functions
+# Faster Input
 def read_int():
     return int(sys.stdin.readline())
+
+def read_n_int():
+    return map(int, sys.stdin.readline().split())
 
 def read_ints():
     return list(map(int, sys.stdin.readline().split()))
 
-# output functions
+
+# Faster Output
 def print_yes_no(condition):
     print('YES' if condition else 'NO')
-
+    
 def print_array(arr, sep=' '):
     print(sep.join(map(str, arr)))
 
 
+# Main Function
 def solve():
     n = read_int()
     cards = read_ints()
-    cards.sort(reverse=True)
-    sereja = 0
-    dima = 0
-    print(cards)
-    for i in range(n):
-        if i%2==0:
-            sereja += cards[i]
+    sereja = []
+    dima = []
+    flag = True
+    while len(cards) != 0:
+        if cards[0] > cards[-1]:
+            temp = cards[0]
+            cards.pop(0)
         else:
-            dima += cards[i]
+            temp = cards[-1]
+            cards.pop(-1)
 
-    print("%d %d"%(sereja,dima))
-    
+        if flag:
+            sereja.append(temp)
+            flag = False 
+        else:
+            dima.append(temp)
+            flag = True 
+
+    print("%d %d"%(sum(sereja), sum(dima)))
+
 if __name__ == '__main__':
     solve()
-
-[48, , 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 33, 32, 31, 29, 28, 27, 26, 25, 24, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 9, 8, 7, 6, 5, 4, 3, 1]
