@@ -1,3 +1,17 @@
+"""
+
+/  \     /  |          /  |                         /  |      
+$$  \   /$$ |  ______  $$ |____    ______   ______  $$ |____  
+$$$  \ /$$$ | /      \ $$      \  /      \ /      \ $$      \ 
+$$$$  /$$$$ |/$$$$$$  |$$$$$$$  |/$$$$$$  |$$$$$$  |$$$$$$$  |
+$$ $$ $$/$$ |$$    $$ |$$ |  $$ |$$ |  $$/ /    $$ |$$ |  $$ |
+$$ |$$$/ $$ |$$$$$$$$/ $$ |  $$ |$$ |     /$$$$$$$ |$$ |__$$ |
+$$ | $/  $$ |$$       |$$ |  $$ |$$ |     $$    $$ |$$    $$/ 
+$$/      $$/  $$$$$$$/ $$/   $$/ $$/       $$$$$$$/ $$$$$$$/ 
+                                    
+
+"""
+
 import sys
 
 # Constants
@@ -31,7 +45,18 @@ def solve():
     programmer = []
     mathmaticians = []
     ps = []
-    for i in 
+    for i in range(n):
+        if t[i] == 1:
+            programmer.append(i+1)
+        elif t[i] == 2:
+            mathmaticians.append(i+1)
+        else:
+            ps.append(i+1)
+
+    m = min(len(programmer), len(mathmaticians), len(ps))
+    print(m)
+    for i in range(m):
+        print("%d %d %d"%(programmer[i],mathmaticians[i],ps[i]))
 
 if __name__ == '__main__':
     solve()
