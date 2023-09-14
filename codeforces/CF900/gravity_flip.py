@@ -37,7 +37,30 @@ def print_array(arr, sep=' '):
 
 # Main Function
 def solve():
-    pass
+    n = read_int()
+    a = read_ints()
+    box = []
+    n2 = max(a)
+    for i in range(n):
+        temp = []
+        for j in range(n2):
+            temp.append(0)
+        box.append(temp)
+
+    for i in range(n):
+        for j in range(a[i]):
+            box[j][i] = 1
+    print(box)
+    
+
+
+# box = max(n)*n
+# Fill the box with zero initially
+# fill the box with column
+    # for i in range(n):
+        #for j in range(max(n)):
+            #box[max[n-1]-j][i] = 1
+
 
 if __name__ == '__main__':
     solve()

@@ -1,0 +1,1 @@
+{"name":"Local: stamps100","url":"/home/mehrab/Documents/cp-gym/codechef/stamps100.py","tests":[{"id":1694618245709,"input":"2\n6\n110110\n4\n0001","output":"110110\n100110\n100110\n0001"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mehrab/Documents/cp-gym/codechef/stamps100.py","group":"local","local":true}
