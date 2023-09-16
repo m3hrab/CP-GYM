@@ -1,23 +1,36 @@
-def solve():
-    t = int(input())
-    while t > 0:
-        t -= 1
-        n = int(input())
-        if n % 2:
-            print((n // 2) + 1)
-        else:
-            print(n // 2)
+from math import gcd, sqrt
 
-if __name__ == "__main__":
-    solve()
-
-#1426A
-#1371A
-for i in range(int(input())):
-    n, x = map(int, input().split())
-    
-    if n <= 2:
-        print(1)
+def prime(z):
+    for k in range(2, int(sqrt(z))+1):
+        if z % k == 0:
+            return False
     else:
-        result = (n - 3) // x + 2
-        print(result)
+        return True
+
+for i in range(int(input())):
+    l, r = map(int, input().split())
+
+    if l != r:
+        for x in range(l, r+1):
+            if x % 2 == 0:
+                p = x//2
+                if (2*p <= r) and (2*p >= l):
+                    if p != 1:
+                        print(p, p)
+                        break
+                if 2*p > r:
+                    print(-1)
+                    break
+        else:
+            print(-1)
+    else:
+        if prime(l):
+            print(-1)
+        else:
+            for i in range(2, r):
+                j = r-i
+                if gcd(i, j) > 1:
+                    print(i, j)
+                    break
+            else:
+                print(-1)

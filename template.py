@@ -11,6 +11,7 @@ $$/      $$/  $$$$$$$/ $$/   $$/ $$/       $$$$$$$/ $$$$$$$/
 
 
 import sys
+from math import gcd, sqrt
 
 # Constants
 INF = float('inf')
@@ -34,10 +35,9 @@ def print_yes_no(condition):
 def print_array(arr, sep=' '):
     print(sep.join(map(str, arr)))
 
-
+    
 # Main Function
 def solve():
     pass
-
 if __name__ == '__main__':
     solve()
