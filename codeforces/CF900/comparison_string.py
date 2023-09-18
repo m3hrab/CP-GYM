@@ -22,22 +22,19 @@ def solve():
         n = int(input())
         s = input()
 
-        if s[0]=='<':
-            temp=[1,2]
-            current = "<"
-        else:
-            temp = [2,1]
-            current = ">"
+        arr = [1]
+        for i in range(n):
+            if s[i]=="<":
+                arr.append(arr[i]+1)
+            else:
+                arr.append(arr[i]-1)
 
-        for i in range(1,n):
-            if s[i] == '<':
-                temp.append(temp[-1]+1)
-            if s[i] == ">":
-                temp.append(temp[-1]-1)
-
-
-        print(len(set(temp)))
-
+        print(len(set(arr)))
 
 if __name__ == '__main__':
     solve()
+
+#    >><>><>
+#    1>0>-1<1>0>-1<1>0
+
+    # 1<2<3>2>1
