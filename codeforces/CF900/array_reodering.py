@@ -1,5 +1,6 @@
-# CP Template 0.2
+# CP Template 0.2 
 # Author: Mehrab (@to0th_less)
+
 
 import sys
 from math import gcd, sqrt
@@ -29,10 +30,28 @@ def print_array(arr, sep=' '):
 # Main Function
 def solve():
     # Sample input format for multiple test cases
-    t = read_int()  
+    t = read_int()
     for _ in range(t):
-        pass 
+        n = read_int()
+        a = read_int_list()
+        
+        even = []
+        odd = []
+        for i in a:
+            if i%2==0:
+                even.append(i)
+            else:
+                odd.append(i)
+        
+        a = even + odd
+        pairs = list(combinations([i for i in range(n)],2))
+        count = 0
+        for i in range(len(pairs)):
+            m = gcd(a[pairs[i][0]],(2*(a[pairs[i][1]])))
+            if m>1:
+                count += 1
 
+        print(count)
 
 if __name__ == '__main__':
     solve()
