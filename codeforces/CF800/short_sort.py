@@ -26,30 +26,26 @@ def print_yes_no(condition):
 def print_array(arr, sep=' '):
     print(sep.join(map(str, arr)))
 
+
 # Main Function
 def solve():
-    n = read_int()
-    a = read_int_list()
+    # Sample input format for multiple test cases
+    t = read_int()
+    for _ in range(t):
+        n = input()
+        if n=='abc':
+            print("YES")
+            continue 
+        else:
+            new = n[1] + n[0] + n[2]
+            new2 = n[2] + n[1] + n[0]
+            new3 = n[0] + n[2] + n[1]
 
-    column = n
-    row = max(a)
-
-    box = []
-    for i in range(column):
-        temp = []
-        for j in range(row):
-            temp.append(0)
-        
-        box.append(temp)
-
-    for i in range(column):
-        for j in range(a[i]):
-            box[i][j] = 1
-
-    for b in box:
-        print_array(b)
-    
-    print(box)
+            if new == "abc" or new2 == 'abc' or new3 == 'abc':
+                print("YES")
+                continue
+            else:
+                print("NO")
 
 
 if __name__ == '__main__':

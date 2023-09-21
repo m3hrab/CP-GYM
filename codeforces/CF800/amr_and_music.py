@@ -28,29 +28,26 @@ def print_array(arr, sep=' '):
 
 # Main Function
 def solve():
-    n = read_int()
+    n, k = read_ints()
     a = read_int_list()
 
-    column = n
-    row = max(a)
+    a = list(enumerate(a))
+    a = sorted(a, key=lambda x: x[1])
 
-    box = []
-    for i in range(column):
-        temp = []
-        for j in range(row):
-            temp.append(0)
-        
-        box.append(temp)
+    values = [element for _, element in a]
+    indexes = [index+1 for index, _ in a]
 
-    for i in range(column):
-        for j in range(a[i]):
-            box[i][j] = 1
+    for i in range(n,-1,-1):
+        if sum(values[:i]) <= k:
+            ans = indexes[:i]
+            break
 
-    for b in box:
-        print_array(b)
     
-    print(box)
-
+    if len(ans)==0:
+        print("0")
+    else:
+        print(len(ans))
+        print_array(ans)
 
 if __name__ == '__main__':
     solve()

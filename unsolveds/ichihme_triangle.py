@@ -26,31 +26,23 @@ def print_yes_no(condition):
 def print_array(arr, sep=' '):
     print(sep.join(map(str, arr)))
 
+def is_triangle(x, y, z):
+    if x+y > z and x+z > y and y+z > x:
+        return True
+    return False
+
 # Main Function
 def solve():
-    n = read_int()
-    a = read_int_list()
+    # Sample input format for multiple test cases
+    t = read_int()
+    for _ in range(t):
+        a, b, c, d = read_ints()
 
-    column = n
-    row = max(a)
+        while True:
+            x = a 
+            z = c 
+            y = c - a + 1
 
-    box = []
-    for i in range(column):
-        temp = []
-        for j in range(row):
-            temp.append(0)
-        
-        box.append(temp)
-
-    for i in range(column):
-        for j in range(a[i]):
-            box[i][j] = 1
-
-    for b in box:
-        print_array(b)
-    
-    print(box)
-
-
+        print("%d %d %d"%(x,y,z))
 if __name__ == '__main__':
     solve()
