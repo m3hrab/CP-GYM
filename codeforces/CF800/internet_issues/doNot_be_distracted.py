@@ -31,9 +31,23 @@ def solve():
     t = read_int()
     for _ in range(t):
         n = read_int()
-        a = read_int_list()
-        ans = max(a) - min(a)
-        print(ans)
+        s = input()
+        
+        current = None 
+        tasks_started = []
+        ans = True
+        
+        for i in range(n):
+            if s[i] == current:
+                continue
+            else:
+                if s[i] in tasks_started:
+                    ans = False 
+                else:
+                    tasks_started.append(s[i])
+                    current = s[i]
+
+        print_yes_no(ans)
 
 
 if __name__ == '__main__':
