@@ -34,6 +34,7 @@ def solve():
     a = list(enumerate(a))
     a = sorted(a, key=lambda x: x[1])
 
+    
     values = [element for _, element in a]
     indexes = [index+1 for index, _ in a]
 

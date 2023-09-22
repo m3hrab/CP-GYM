@@ -29,27 +29,9 @@ def print_array(arr, sep=' '):
 # Main Function
 def solve():
     n = read_int()
-    a = read_int_list()
-
-    column = n
-    row = max(a)
-
-    box = []
-    for i in range(column):
-        temp = []
-        for j in range(row):
-            temp.append(0)
-        
-        box.append(temp)
-
-    for i in range(column):
-        for j in range(a[i]):
-            box[i][j] = 1
-
-    for b in box:
-        print_array(b)
+    m = sorted(read_int_list())
+    print_array(m)
     
-    print(box)
 
 
 if __name__ == '__main__':
