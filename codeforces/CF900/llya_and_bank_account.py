@@ -30,23 +30,15 @@ def print_array(arr, sep=' '):
 def solve():
     n = read_int()
     if n < 0:
-        n = list(str(n))
-        if len(n)>1:
-            l1 = int(n[-1])
-            l2 = int(n[-2])
-            if l2 > l1:
-                n.pop(-2)
-            else:
-                n.pop(-1)
+        n = abs(n)
+        l1 = n%10
+        l2 = ((n-l1)//10)%10
+        if l2>l1:
+            n = (((n-l1)//10) - l2) + l1
         else:
-            n.pop()
+            n = (n-l1)//10
 
-        ans = ''
-        for i in n:
-            ans += i 
-        
-        n = int(ans)
-
+        n = - n
     print(n)
 
 
