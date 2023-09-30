@@ -30,18 +30,17 @@ def print_array(arr, sep=' '):
 def solve():
     n = read_int()
     a = read_int_list()
-    count = 0
-    subsegment = []
+    count = 1
+    subsegment = 1
     for i in range(n-1):
-        if a[i] >= a[i+1]:
+        if a[i] <= a[i+1]:
             count += 1
         else:
-            subsegment.append(count)
-            count = 0
+            subsegment = max(subsegment, count)
+            count = 1
 
-    if n == 1:
-        subsegment.append(1)
-    print(max(subsegment))
+    subsegment = max(subsegment,count)
+    print(subsegment)
 
 
 
