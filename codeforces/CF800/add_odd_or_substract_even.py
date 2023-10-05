@@ -33,17 +33,24 @@ def solve():
         a, b = read_ints()
 
         if a==b:
-            print("0")
+            ans = 0
         else:
             if (a%2==0 and b%2==0) or (a%2==1 and b%2==1):
-                print("1")
-            else:
-                if abs(a-b) == 1:
-                    print("1")
+                if a>b:
+                    ans = 1
                 else:
-                    print("2")
-                    
+                    ans = 2
+            else:
+                if a<b:
+                    ans = 1
+                else:
+                    ans = 2
+        
+        print(ans)
+
 
 
 if __name__ == '__main__':
     solve()
+
+
