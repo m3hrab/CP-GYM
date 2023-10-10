@@ -33,12 +33,25 @@ def solve():
         n = read_int()
         arr = sorted(read_int_list())
 
-        m = n//2 + 1
 
-        if sum(arr[:m]) < sum(arr[m:]):
-            ans = True 
-        else:
-            ans = False 
+        sum1 = arr[0] + arr[1]
+        sum2 = arr[n-1]
+        p1 = 2
+        p2 = n - 2
+
+        ans = False
+        while p1 < p2:
+            if sum2 > sum1:
+                ans = True 
+                break 
+            else:
+                sum1 += arr[p1]
+                sum2 += arr[p2]
+                p1 += 1 
+                p2 -= 1 
+
+        
+
         
         print_yes_no(ans)
 
