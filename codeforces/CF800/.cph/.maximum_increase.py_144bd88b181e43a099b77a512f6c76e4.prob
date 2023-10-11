@@ -1,0 +1,1 @@
+{"name":"Local: maximum_increase","url":"/home/mehrab/Documents/cp-gym/codeforces/CF800/maximum_increase.py","tests":[{"id":1697045330889,"input":"6\n100 100 100 100 100 100\n","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mehrab/Documents/cp-gym/codeforces/CF800/maximum_increase.py","group":"local","local":true}
