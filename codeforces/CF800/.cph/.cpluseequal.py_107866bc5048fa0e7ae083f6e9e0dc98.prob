@@ -1,0 +1,1 @@
+{"name":"Local: cpluseequal","url":"/home/mehrab/Documents/cp-gym/codeforces/CF800/cpluseequal.py","tests":[{"id":1697044454302,"input":"2\n1 2 3\n5 4 100","output":"2\n7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mehrab/Documents/cp-gym/codeforces/CF800/cpluseequal.py","group":"local","local":true}
