@@ -34,10 +34,27 @@ def solve():
         arr.append(read_int())
 
     new = []
+    total = 0
+    
     for i in arr:
-        if i%2 == 0:
-            new.append(i//2) 
-        else:
+        temp = i // 2
+        new.append(temp)
+        total += temp 
+    
+    total = abs(total)
+    if total != 0:
+
+        for i in range(len(arr)):
+            if arr[i] % 2 != 0:   
+                new[i] = arr[i]//2 + 1
+                total -= 1 
+
+            if total == 0:
+                break 
+
+    for i in new:
+        print(i)
+    
             
 
 
