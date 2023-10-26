@@ -1,14 +1,3 @@
-for _ in range(int(input())):
+for i in range(int(input())):
     a, b = map(int, input().split())
-
-    mx = max(a,b)
-    mn = min(a,b)
-
-    temp = (mx * 2) * mn
-    ans = (mx * 2) ** 2
-
-    if ans < temp:
-        i = 1 
-        n = mx * 2
-        while ans < temp:
-            ans = (n + i)  
+    print(min(max(2*b, a), max(2*a, b))**2)

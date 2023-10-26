@@ -1,0 +1,1 @@
+{"name":"Local: minimal_square","url":"/home/mehrab/Documents/cp-gym/codeforces/CF800/minimal_square.py","tests":[{"id":1698337136821,"input":"8\n3 2\n4 1","output":"16\n16"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mehrab/Documents/cp-gym/codeforces/CF800/minimal_square.py","group":"local","local":true}
