@@ -31,9 +31,14 @@ def solve():
     t = read_int()
     for _ in range(t):
         n = read_int()
-        
-        while n >= 2:
-            n /= 2
-        
+        s = input()
+        m = set(s)
+        cnt = 0
+        for i in m:
+            if s.count(i) >= ord(i) - 64:
+                cnt += 1
+        print(cnt)
+
+
 if __name__ == '__main__':
     solve()
