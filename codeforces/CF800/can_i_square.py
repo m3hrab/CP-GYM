@@ -30,12 +30,15 @@ def print_array(arr, sep=' '):
 def solve():
     t = read_int()
     for _ in range(t):
-        n, k = read_ints()
-        a = [i for i in range(1, n + 1)]
-        ans = a[:k] 
-        ans1 = reversed(a[k:])
-        ans.extend(ans1)
-        print_array(ans)    
+        n = read_int()
+        a = read_int_list()
+        temp = sqrt(sum(a))
+
+        ans = False
+        if int(temp) == temp:
+            ans = True
+        
+        print_yes_no(ans)
 
 
 if __name__ == '__main__':
